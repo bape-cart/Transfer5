@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investment Withdrawal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="withdrawal-form">
+      <h2>E-fund Transfer</h2>
+      <!-- Display Account Name -->
+      <label for="accountName">Account Name</label>
+      <input type="text" id="accountName" value="Andrew Wandenai" disabled />
+      <!-- Display Account Number -->
+      <label for="accountNumber">Account Number</label>
+      <input type="text" id="accountNumber" value="1002077947" disabled />
+      <!-- Display Profit Balance -->
+      <label for="profitBalance">Profit Balance</label>
+      <input type="text" id="profitBalance" value="$22,725.00" disabled />
+      <!-- Withdrawal Amount Input -->
+      <label for="withdrawalAmount">Withdrawal Amount</label>
+      <input
+        type="number"
+        id="withdrawalAmount"
+        placeholder="Enter amount to withdraw"
+      />
+      <!-- Bank Selection Dropdown -->
+      <label for="bankName">Select Bank</label>
+      <select id="bankName">
+        <option value="">Select your bank</option>
+        <option value="Bank of America">Bank of America</option>
+        <option value="JPMorgan Chase">JPMorgan Chase</option>
+        <option value="Wells Fargo">Wells Fargo</option>
+        <option value="Citibank">Citibank</option>
+        <option value="Goldman Sachs">Goldman Sachs</option>
+        <option value="Royal Bank of Canada">Royal Bank of Canada</option>
+        <option value="TD Canada Trust">TD Canada Trust</option>
+        <option value="Scotiabank">Scotiabank</option>
+        <option value="Bank of Montreal">Bank of Montreal</option>
+        <option value="CIBC">CIBC</option>
+        <option value="HSBC">HSBC</option>
+        <option value="Barclays">Barclays</option>
+        <option value="Lloyds Bank">Lloyds Bank</option>
+        <option value="NatWest">NatWest</option>
+        <option value="Santander UK">Santander UK</option>
+        <option value="Commonwealth Bank">Commonwealth Bank</option>
+        <option value="Westpac">Westpac</option>
+        <option value="ANZ">ANZ</option>
+        <option value="National Australia Bank">National Australia Bank</option>
+        <option value="Macquarie Bank">Macquarie Bank</option>
+        <option value="Deutsche Bank">Deutsche Bank</option>
+        <option value="Commerzbank">Commerzbank</option>
+        <option value="KfW Bank">KfW Bank</option>
+        <option value="DZ Bank">DZ Bank</option>
+        <option value="HypoVereinsbank">HypoVereinsbank</option>
+        <option value="Bank South Pacific">Bank South Pacific</option>
+        <option value="Australia and New Zealand Banking Group PNG">
+          Australia and New Zealand Banking Group PNG
+        </option>
+        <option value="Westpac PNG">Westpac PNG</option>
+        <option value="Kina Bank">Kina Bank</option>
+        <option value="Nasfund Contributors Savings and Loan Society">
+          Nasfund Contributors Savings and Loan Society
+        </option>
+      </select>
+      <!-- Submit Button -->
+      <button onclick="submitWithdrawal()">Withdraw</button>
+      
+      
+      <div id="loader" class="hidden">
+        <span class="loader">
+          <span class="loader__ball"></span>
+         <span class="loader__ball"></span>
+         <span class="loader__ball"></span>
+         </span>
+         <p class="processing-message">Processing Transfer...</p> <!-- Text below spinner -->
+      </div>
+       
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
